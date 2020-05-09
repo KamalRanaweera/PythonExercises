@@ -55,4 +55,67 @@ fruits = ["Banana", "Apple", "Grape", "Pineapple"]
 for fruit in fruits:
     print(fruit)
 
+# While loop
+count = 0
+while count < 5:
+    print(count)
+    count = count + 1
 
+count = 0
+while count < 5:
+    print(count)
+    count += 1  # As same as "count = count + 1"
+
+count = 0
+while True:
+    print(count)
+    count += 1
+
+    if count > 4:
+        break
+
+
+print("While loop ended ...")
+
+count = 0
+while count <= 5:
+    count += 1
+
+    if count % 2:   # % gives the remainder of the devision
+        continue
+
+    print(count)
+
+print("While loop ended ...")
+
+
+# Loop with ELSE clause
+for i in range(1,10):
+    print("i =", i)
+else:
+    print("Loop fully completed")
+
+print("Done ...")
+
+# Print only the even numbers
+for i in range(1,10):
+    if i % 2 > 0:
+        continue
+
+    print("i =", i)
+else:
+    print("Loop fully completed")
+
+print("Done ...")
+
+
+# Print only the even numbers
+for i in range(1,10):
+    if i == 5:
+        break
+    
+    print("i =", i)
+else:
+    print("Loop fully completed")
+
+print("Done ...")
